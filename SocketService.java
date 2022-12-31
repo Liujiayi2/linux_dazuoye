@@ -9,7 +9,7 @@ public class SocketService{
 			ServerSocket server = null;
 			try{
 				server = new ServerSocket(2022);
-				System.out.println("Service enable Success");}
+				System.out.println("Service enable Success...");}
 			catch(Exception e){System.out.println("No Listen:" + e);}
 			Socket socket = null;
 			try{socket = server.accept();}
