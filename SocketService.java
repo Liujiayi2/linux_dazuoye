@@ -12,9 +12,10 @@ public class SocketService{
                 try{
                         ServerSocket server = null;
                         try{
-                                server = new ServerSocket(2022);
+                                server = new ServerSocket(2002);
                                 System.out.println("Service enable Success");}
-                        catch(Exception e){System.out.println("No Listen:" + e);}                        Socket socket = null;
+                        catch(Exception e){System.out.println("No Listen:" + e);}
+			Socket socket = null;
                         try{socket = server.accept();}
                         catch(Exception e){System.out.println("Error." + e);}
                         String line;
