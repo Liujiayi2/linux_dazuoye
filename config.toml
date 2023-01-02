@@ -1,0 +1,82 @@
+baseurl = "https://example.com"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "一家之煮的博客"
+theme = "dream"
+
+# copyright = ""
+
+# googleAnalytics = ""
+
+# disqusShortname = ""
+
+# enableRobotsTXT = true
+
+[params]
+  background = "white"
+  backgroundImage = "/me/background.jpg"
+  linkColor = "seagreen"
+
+  # dark mode
+  defaultDark = true
+  backgroundDark = "black"
+  backgroundImageDark = "/me/background-dark.jpg"
+  darkLinkColor = "darkseagreen"
+  darkNav = true
+  dark404 = true
+
+  author = "Jiayi Liu"
+  # description = ""
+  avatar = "/img/avatar.jpeg"
+  headerTitle = "Hugo Theme Dream"
+  motto = "一以贯之的努力，不得懈怠的人生。"
+  # maxTags = 5
+  # categoriesLimitInHeader = 6 # deprecated
+  # headerBottomText = "" # deprecated
+
+  # footerBottomText = ""
+
+  # rss = true
+
+  # utterancesRepo = ""
+
+  # valine = true
+  # LEANCLOUD_APP_ID = ""
+  # LEANCLOUD_APP_KEY = ""
+  # VALINE_LANGUAGE = ""
+
+  email = "2844545327@qq.com"
+  github = "Liujiayi2"
+
+  siteStartYear = 2016
+
+  # favicon = "/favicon.ico"
+
+  # highlightjs = true
+  # highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  # highlightjsExtraLanguages = ["ocaml"]
+  # highlightjsTheme = "gruvbox-light"
+  # highlightjsThemeDark = "gruvbox-dark"
+
+  # search
+  # enableSearch = true
+
+  # options
+  # showSummaryCoverInPost = true
+  # hasTwitterEmbed = true
+  # reversePostAndAside = true
+  # shareInAside = true
+  # fixedNav = true
+  # collapsibleTags = true
+  # collapseBySummary = true
+  # disableFlip = true
+  # hideBackSocialLinks = true
+
+  # [params.advanced]
+  #   customCSS = ["css/custom.css"]
+  #   customJSBefore = []
+  #   customJS = []
+
+  # [params.experimental]
+  #   jsDate = true
+  #   jsDateFormat = "2023年01月02日"
