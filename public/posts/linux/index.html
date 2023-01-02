@@ -10,9 +10,23 @@
 
 
 
-<meta name="author" content="Author Name" />
-<meta name="description" content="安装配置Git 1.安装Git sudo yum install git 2.配置Git （1）配置用户名和邮箱： git config --global user.name &amp;quot;Liujiayi2&amp;quot; git config --global user.email &amp;quot;example@example.com&amp;quot; git config --list （2）获取ssh密钥： ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot; cat /root/.ssh/id_rsa.pub （3）成功建立和Github的联系：
-![](/图片1.png) ssh git@github.com （4）关联到远程仓库： git remote add origin git@github.com:your_username/xxx.git git remote set-url origin git@github.com:your_username/xxx.git git remote -v git push -u origin &amp;quot;main&amp;quot; ##使用docker和socket技术使客户端和服务端之间的信息传递 （1）安装docker： sudo yum install docker （2）在远程仓库下载tomcat镜像： docker pull tomcat （3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004： docker run -itd --name fwd -p 2002:2002 tomcat docker run -itd --name khd -p 2004:2002 tomcat （4）查看fwq的IP地址： docker incpect --format=&#39;{{." />
+<meta name="author" content="Jiayi Liu" />
+<meta name="description" content="安装配置Git  1.安装Git
+ sudo yum install git
+  2.配置Git
+（1）配置用户名和邮箱：
+ git config --global user.name &amp;quot;Liujiayi2&amp;quot;
+  git config --global user.email &amp;quot;example@example.com&amp;quot;
+  git config --list
+ （2）获取ssh密钥：
+ ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;
+  cat /root/.ssh/id_rsa.pub
+ （3）成功建立和Github的联系：
+ ssh git@github.com
+ （4）关联到远程仓库：
+ git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git
+  git push -u origin &amp;quot;main&amp;quot;
+  Ps:如果git push -u origin &amp;quot;main&amp;quot;运行不成功，可以试一下代码：git remote set-url origin git@github." />
 
 
 
@@ -22,19 +36,47 @@
 
 
 <meta property="og:title" content="Linux" />
-<meta property="og:description" content="安装配置Git 1.安装Git sudo yum install git 2.配置Git （1）配置用户名和邮箱： git config --global user.name &quot;Liujiayi2&quot; git config --global user.email &quot;example@example.com&quot; git config --list （2）获取ssh密钥： ssh-keygen -t rsa -C &quot;example@example.com&quot; cat /root/.ssh/id_rsa.pub （3）成功建立和Github的联系：
-![](/图片1.png) ssh git@github.com （4）关联到远程仓库： git remote add origin git@github.com:your_username/xxx.git git remote set-url origin git@github.com:your_username/xxx.git git remote -v git push -u origin &quot;main&quot; ##使用docker和socket技术使客户端和服务端之间的信息传递 （1）安装docker： sudo yum install docker （2）在远程仓库下载tomcat镜像： docker pull tomcat （3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004： docker run -itd --name fwd -p 2002:2002 tomcat docker run -itd --name khd -p 2004:2002 tomcat （4）查看fwq的IP地址： docker incpect --format=&#39;{{." />
+<meta property="og:description" content="安装配置Git  1.安装Git
+ sudo yum install git
+  2.配置Git
+（1）配置用户名和邮箱：
+ git config --global user.name &quot;Liujiayi2&quot;
+  git config --global user.email &quot;example@example.com&quot;
+  git config --list
+ （2）获取ssh密钥：
+ ssh-keygen -t rsa -C &quot;example@example.com&quot;
+  cat /root/.ssh/id_rsa.pub
+ （3）成功建立和Github的联系：
+ ssh git@github.com
+ （4）关联到远程仓库：
+ git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git
+  git push -u origin &quot;main&quot;
+  Ps:如果git push -u origin &quot;main&quot;运行不成功，可以试一下代码：git remote set-url origin git@github." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/posts/linux/" />
-<meta property="article:published_time" content="2023-01-02T09:12:29+08:00" />
-<meta property="article:modified_time" content="2023-01-02T09:12:29+08:00" />
+<meta property="article:published_time" content="2023-01-02T13:11:07+08:00" />
+<meta property="article:modified_time" content="2023-01-02T13:11:07+08:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux"/>
-<meta name="twitter:description" content="安装配置Git 1.安装Git sudo yum install git 2.配置Git （1）配置用户名和邮箱： git config --global user.name &quot;Liujiayi2&quot; git config --global user.email &quot;example@example.com&quot; git config --list （2）获取ssh密钥： ssh-keygen -t rsa -C &quot;example@example.com&quot; cat /root/.ssh/id_rsa.pub （3）成功建立和Github的联系：
-![](/图片1.png) ssh git@github.com （4）关联到远程仓库： git remote add origin git@github.com:your_username/xxx.git git remote set-url origin git@github.com:your_username/xxx.git git remote -v git push -u origin &quot;main&quot; ##使用docker和socket技术使客户端和服务端之间的信息传递 （1）安装docker： sudo yum install docker （2）在远程仓库下载tomcat镜像： docker pull tomcat （3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004： docker run -itd --name fwd -p 2002:2002 tomcat docker run -itd --name khd -p 2004:2002 tomcat （4）查看fwq的IP地址： docker incpect --format=&#39;{{."/>
+<meta name="twitter:description" content="安装配置Git  1.安装Git
+ sudo yum install git
+  2.配置Git
+（1）配置用户名和邮箱：
+ git config --global user.name &quot;Liujiayi2&quot;
+  git config --global user.email &quot;example@example.com&quot;
+  git config --list
+ （2）获取ssh密钥：
+ ssh-keygen -t rsa -C &quot;example@example.com&quot;
+  cat /root/.ssh/id_rsa.pub
+ （3）成功建立和Github的联系：
+ ssh git@github.com
+ （4）关联到远程仓库：
+ git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git
+  git push -u origin &quot;main&quot;
+  Ps:如果git push -u origin &quot;main&quot;运行不成功，可以试一下代码：git remote set-url origin git@github."/>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
@@ -135,6 +177,10 @@
       <nav id="TableOfContents">
   <ul>
     <li><a href="#安装配置git">安装配置Git</a></li>
+    <li><a href="#使用docker和socket技术使客户端和服务端之间的信息传递">使用docker和socket技术使客户端和服务端之间的信息传递</a></li>
+    <li><a href="#安装hugo并创建静态网站">安装hugo并创建静态网站</a></li>
+    <li><a href="#img图片7png"><img src="/img/%E5%9B%BE%E7%89%877.png" alt=""></a></li>
+    <li><a href="#2">（2）</a></li>
   </ul>
 </nav>
     </div>
@@ -151,7 +197,7 @@
               @
               
                 
-                  Author Name
+                  Jiayi Liu
                 
               
 
@@ -195,39 +241,75 @@
         
 
         <h2 id="安装配置git">安装配置Git</h2>
-<p><strong>1.安装Git</strong>
-<code>sudo yum install git</code>
-<strong>2.配置Git</strong>
-（1）配置用户名和邮箱：
-<code>git config --global user.name &quot;Liujiayi2&quot;</code>
-<code>git config --global user.email &quot;example@example.com&quot;</code>
-<code>git config --list</code>
-（2）获取ssh密钥：
-<code>ssh-keygen -t rsa -C &quot;example@example.com&quot;</code>
-<code>cat /root/.ssh/id_rsa.pub</code>
-（3）成功建立和Github的联系：</p>
-<pre><code>![](/图片1.png)
-</code></pre><p><code>ssh git@github.com</code>
-（4）关联到远程仓库：
-<code>git remote add origin git@github.com:your_username/xxx.git</code>
-<code>git remote set-url origin git@github.com:your_username/xxx.git</code>
-<code>git remote -v</code>
-<code>git push -u origin &quot;main&quot;</code>
-##使用docker和socket技术使客户端和服务端之间的信息传递
-（1）安装docker：
-<code>sudo yum install docker</code>
-（2）在远程仓库下载tomcat镜像：
-<code>docker pull tomcat</code>
-（3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004：
-<code>docker run -itd --name fwd -p 2002:2002 tomcat</code>
-<code>docker run -itd --name khd -p 2004:2002 tomcat</code>
-（4）查看fwq的IP地址：
-<code>docker incpect --format='{{.NetworkSettings.IPAddress}}' fwd</code></p>
-<pre><code>![](/图片2.png)
-</code></pre><p>（5）创建一个服务端类和一个客户端类:
-<code>vim SocketService.java</code>
-服务端代码如下：</p>
-<pre><code>import java.io.BufferedReader;
+<hr>
+<p><strong>1.安装Git</strong></p>
+<blockquote>
+<p><code>sudo yum install git</code></p>
+</blockquote>
+<hr>
+<p><strong>2.配置Git</strong></p>
+<p>（1）配置用户名和邮箱：</p>
+<blockquote>
+<p><code>git config --global user.name &quot;Liujiayi2&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>git config --global user.email &quot;example@example.com&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>git config --list</code></p>
+</blockquote>
+<p>（2）获取ssh密钥：</p>
+<blockquote>
+<p><code>ssh-keygen -t rsa -C &quot;example@example.com&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>cat /root/.ssh/id_rsa.pub</code></p>
+</blockquote>
+<p>（3）成功建立和Github的联系：</p>
+<p><img src="/img/%E5%9B%BE%E7%89%871.png" alt=""></p>
+<blockquote>
+<p><code>ssh git@github.com</code></p>
+</blockquote>
+<p>（4）关联到远程仓库：</p>
+<blockquote>
+<p><code>git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git</code></p>
+</blockquote>
+<blockquote>
+<p><code>git push -u origin &quot;main&quot;</code></p>
+</blockquote>
+<blockquote>
+<p>Ps:如果<code>git push -u origin &quot;main&quot;</code>运行不成功，可以试一下代码：<code>git remote set-url origin git@github.com:your_username/xxx.git</code></p>
+</blockquote>
+<hr>
+<h2 id="使用docker和socket技术使客户端和服务端之间的信息传递">使用docker和socket技术使客户端和服务端之间的信息传递</h2>
+<p>（1）安装docker：</p>
+<blockquote>
+<p><code>sudo yum install docker</code></p>
+</blockquote>
+<p>（2）在远程仓库下载tomcat镜像：</p>
+<blockquote>
+<p><code>docker pull tomcat</code></p>
+</blockquote>
+<p>（3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwd的端口为2002，khd的端口为2004：</p>
+<blockquote>
+<p><code>docker run -itd --name fwd -p 2002:2002 tomcat</code></p>
+</blockquote>
+<blockquote>
+<p><code>docker run -itd --name khd -p 2004:2002 tomcat</code></p>
+</blockquote>
+<p>（4）查看fwd的IP地址：</p>
+<blockquote>
+<p><code>docker inspect --format='{{.NetworkSettings.IPAddress}}' fwd</code></p>
+</blockquote>
+<p><img src="/img/%E5%9B%BE%E7%89%872.png" alt=""></p>
+<p>（5）创建一个服务端类和一个客户端类:</p>
+<blockquote>
+<p><code>vim SocketService.java</code></p>
+</blockquote>
+<blockquote>
+<p>服务端代码如下：</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -242,34 +324,43 @@ public class SocketService{
                         ServerSocket server = null;
                         try{
                                 server = new ServerSocket(2002);
-                                System.out.println(&quot;Service enable Success&quot;);}
-                        catch(Exception e){System.out.println(&quot;No Listen:&quot; + e);}
-                        Socket socket = null;
+                                System.out.println(&#34;Service enable Success&#34;);}
+                        catch(Exception e){System.out.println(&#34;No Listen:&#34; + e);}                        Socket socket = null;
                         try{socket = server.accept();}
-                        catch(Exception e){System.out.println(&quot;Error.&quot; + e);}
+                        catch(Exception e){System.out.println(&#34;Error.&#34; + e);}
                         String line;
                         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                         PrintWriter writer = new PrintWriter(socket.getOutputStream());
                         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                        System.out.println(&quot;Client:&quot; + in.readLine());
+                        System.out.println(&#34;Client:&#34; + in.readLine());
                         line = br.readLine();
-                        while(!line.equals(&quot;end&quot;)){
+                        while(!line.equals(&#34;end&#34;)){
                                 writer.println(line);
                                 writer.flush();
-                                System.out.println(&quot;Service:&quot; + line);
-                                System.out.println(&quot;Client:&quot; + in.readLine());
+                                System.out.println(&#34;Service:&#34; + line);
+                                System.out.println(&#34;Client:&#34; + in.readLine());
                                 line = br.readLine();}
                         writer.close();
                         in.close();
                         socket.close();
                         server.close();}
-                catch(Exception e){System.out.println(&quot;Error.&quot; + e);}}}
-</code></pre><p><code>git add SocketService.java</code>
-<code>git commit -m &quot;新建一个服务端&quot;</code>
-<code>git push -u origin &quot;main&quot;</code>
-<code>vim SocketClient.java</code>
-客户端代码如下：</p>
-<pre><code>import java.io.BufferedReader;
+                catch(Exception e){System.out.println(&#34;Error.&#34; + e);}}}
+</code></pre></div><blockquote>
+<p><code>git add SocketService.java</code></p>
+</blockquote>
+<blockquote>
+<p><code>git commit -m &quot;新建一个服务端&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>git push -u origin &quot;main&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>vim SocketClient.java</code></p>
+</blockquote>
+<blockquote>
+<p>客户端代码如下：</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -282,57 +373,83 @@ import java.net.URL;
 public class SocketClient{
         public static void main(String[] args) throws IOException{
                 try{
-                        Socket socket = new Socket(&quot;172.17.0.2&quot;,2002);
-                        System.out.println(&quot;Client enable Success&quot;);
+                        Socket socket = new Socket(&#34;172.17.0.2&#34;,2002);
+                        System.out.println(&#34;Client enable Success&#34;);
                         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                         PrintWriter writer = new PrintWriter(socket.getOutputStream());
                         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                         String readline;
                         readline = br.readLine();
-                        while(!readline.equals(&quot;end&quot;)){
+                        while(!readline.equals(&#34;end&#34;)){
                                 writer.println(readline);
                                 writer.flush();
-                                System.out.println(&quot;Client:&quot; + readline);
-                                System.out.println(&quot;Service:&quot; + in.readLine());
+                                System.out.println(&#34;Client:&#34; + readline);
+                                System.out.println(&#34;Service:&#34; + in.readLine());
                                 readline = br.readLine();}
                         writer.close();
                         in.close();
                         socket.close();}
-                catch(Exception e){System.out.println(&quot;can not listen to&quot; + e);}}}
-</code></pre><p><code>git add SocketClient.java</code>
-<code>git commit -m &quot;新建一个客户端&quot;</code>
-<code>git push -u origin &quot;main&quot;</code></p>
-<pre><code>![](/图片3.png)
-</code></pre><p>（6）将服务器端和客户端代码分别拷贝到对应容器的镜像里：
-<code>docker cp SocketService.java fwd:/</code>
-<code>docker cp SocketClient.java khd:/</code>
-（7）进入服务器的容器和客户端的容器，然后启动服务器端和客户端程序，开始通信：</p>
-<pre><code>![](/图片4.png)
-![](/图片5.png)
-</code></pre><p>##安装hugo并创建静态网站
-<strong>1.安装并配置Hugo</strong>
-（1）下载hugo包：
-<code>wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.deb</code>
-（2）安装hugo：
-<code>dnf install dpkg</code>
-<code>dpkg -i hugo_0.80.0_Linux-64bit.deb</code>
-（3）新建站点blog：
-<code>hugo new site blog</code>
-（4下载一个主题：
-<code>git submodule add https://github.com/vimux/mainroad.git themes/mainroad</code>
-（5）配置config.toml
-<code>vim config.toml</code></p>
+                catch(Exception e){System.out.println(&#34;can not listen to&#34; + e);}}}
+</code></pre></div><blockquote>
+<p><code>git add SocketClient.java</code></p>
+</blockquote>
+<blockquote>
+<p><code>git commit -m &quot;新建一个客户端&quot;</code></p>
+</blockquote>
+<blockquote>
+<p><code>git push -u origin &quot;main&quot;</code></p>
+</blockquote>
+<p><img src="/img/%E5%9B%BE%E7%89%873.png" alt=""></p>
+<p>（6）将服务器端和客户端代码分别拷贝到对应容器的镜像里：</p>
+<blockquote>
+<p><code>docker cp SocketService.java fwd:/</code></p>
+</blockquote>
+<blockquote>
+<p><code>docker cp SocketClient.java khd:/</code></p>
+</blockquote>
+<p>（7）进入服务器的容器和客户端的容器，然后启动服务器端和客户端程序，开始通信：</p>
+<p><img src="/img/%E5%9B%BE%E7%89%874.png" alt=""></p>
+<p><img src="/img/%E5%9B%BE%E7%89%875.png" alt=""></p>
+<hr>
+<h2 id="安装hugo并创建静态网站">安装hugo并创建静态网站</h2>
+<p><strong>1.安装并配置Hugo</strong></p>
+<p>（1）下载hugo包：</p>
+<blockquote>
+<p><code>wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.deb</code></p>
+</blockquote>
+<p>（2）安装hugo：</p>
+<blockquote>
+<p><code>dnf install dpkg</code></p>
+</blockquote>
+<blockquote>
+<p><code>dpkg -i hugo_0.80.0_Linux-64bit.deb</code></p>
+</blockquote>
+<p>（3）新建站点blog：</p>
+<blockquote>
+<p><code>hugo new site blog</code></p>
+</blockquote>
+<p>（4）下载一个主题：</p>
+<blockquote>
+<p><code>git submodule add https://github.com/vimux/mainroad.git themes/mainroad</code></p>
+</blockquote>
+<p>（5）配置config.toml</p>
+<blockquote>
+<p><code>vim config.toml</code></p>
+</blockquote>
 <pre><code>
-</code></pre><p><strong>2.使用Markdown语法编写网站内容</strong>
-（1）新建一篇文章：
-<code>hugo new post/Linux_dazuoye.md</code>
-（2）编写文章：</p>
-<pre><code>![](/图片6.png)
-</code></pre><p>（3）在本地使用hugo命令在根目录生成public文件夹：</p>
-<pre><code>![](/图片7.png)
-</code></pre><p><strong>3.运用docker技术部署静态网站到web服务器</strong>
-（1）创建一个容器web：</p>
-<p>（2）</p>
+</code></pre><hr>
+<p><strong>2.使用Markdown语法编写网站内容</strong></p>
+<p>（1）新建一篇文章：</p>
+<blockquote>
+<p><code>hugo new posts/Linux_dazuoye.md</code></p>
+</blockquote>
+<p>（2）编写文章：</p>
+<p><img src="/img/%E5%9B%BE%E7%89%876.png" alt=""></p>
+<p>（3）在本地使用hugo命令在根目录生成public文件夹：</p>
+<h2 id="img图片7png"><img src="/img/%E5%9B%BE%E7%89%877.png" alt=""></h2>
+<p><strong>3.运用docker技术部署静态网站到web服务器</strong></p>
+<p>（1）创建一个容器web：</p>
+<h2 id="2">（2）</h2>
 
       </article>
     </section>

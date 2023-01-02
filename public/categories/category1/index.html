@@ -24,7 +24,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://example.com/categories/category1/" />
-<meta property="og:updated_time" content="2023-01-02T09:12:29+08:00" />
+<meta property="og:updated_time" content="2023-01-02T13:11:07+08:00" />
 
 
 
@@ -184,7 +184,7 @@
   
   <a class="image" href="https://example.com/posts/linux/">
     
-    <img src="/img/cover.jpg" alt="Linux" />
+    <img src="/img/default2.jpg" alt="Linux" />
     
   </a>
   
@@ -201,13 +201,27 @@
       </p>
     </div>
     <div class="description">
-      安装配置Git 1.安装Git sudo yum install git 2.配置Git （1）配置用户名和邮箱： git config --global user.name &quot;Liujiayi2&quot; git config --global user.email &quot;example@example.com&quot; git config --list （2）获取ssh密钥： ssh-keygen -t rsa -C &quot;example@example.com&quot; cat /root/.ssh/id_rsa.pub （3）成功建立和Github的联系：
-![](/图片1.png) ssh git@github.com （4）关联到远程仓库： git remote add origin git@github.com:your_username/xxx.git git remote set-url origin git@github.com:your_username/xxx.git git remote -v git push -u origin &quot;main&quot; ##使用docker和socket技术使客户端和服务端之间的信息传递 （1）安装docker： sudo yum install docker （2）在远程仓库下载tomcat镜像： docker pull tomcat （3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004： docker run -itd --name fwd -p 2002:2002 tomcat docker run -itd --name khd -p 2004:2002 tomcat （4）查看fwq的IP地址： docker incpect --format='{{.
+      安装配置Git  1.安装Git
+ sudo yum install git
+  2.配置Git
+（1）配置用户名和邮箱：
+ git config --global user.name &quot;Liujiayi2&quot;
+  git config --global user.email &quot;example@example.com&quot;
+  git config --list
+ （2）获取ssh密钥：
+ ssh-keygen -t rsa -C &quot;example@example.com&quot;
+  cat /root/.ssh/id_rsa.pub
+ （3）成功建立和Github的联系：
+ ssh git@github.com
+ （4）关联到远程仓库：
+ git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git
+  git push -u origin &quot;main&quot;
+  Ps:如果git push -u origin &quot;main&quot;运行不成功，可以试一下代码：git remote set-url origin git@github.
     </div>
   </div>
 
   <div class="extra content">
-    <div class="author">@&nbsp;Author Name</div>
+    <div class="author">@&nbsp;Jiayi Liu</div>
     <div class="reading-time">
       <i class="clock icon"></i>2 minutes read</div>
   </div>
