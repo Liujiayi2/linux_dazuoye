@@ -17,6 +17,7 @@ tags:
 draft: true
 ---
 ## 安装配置Git
+```
 **1.安装Git**
 `sudo yum install git`
 **2.配置Git**
@@ -29,14 +30,17 @@ draft: true
 `cat /root/.ssh/id_rsa.pub`
 （3）成功建立和Github的联系：
 ```
-![](/图片1.png)
+![](/img/图片1.png)
 ```
 `ssh git@github.com`
 （4）关联到远程仓库：
-`git remote add origin git@github.com:your_username/xxx.git`
+`git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git`
+`git push -u origin "main"`
+```
+如果`git push -u origin "main"`运行不成功，可以试一下下面的代码：
 `git remote set-url origin git@github.com:your_username/xxx.git`
 `git remote -v`
-`git push -u origin "main"`
+```
 ##使用docker和socket技术使客户端和服务端之间的信息传递
 （1）安装docker：
 `sudo yum install docker`
@@ -48,7 +52,7 @@ draft: true
 （4）查看fwq的IP地址：
 `docker incpect --format='{{.NetworkSettings.IPAddress}}' fwd`
 ```
-![](/图片2.png)
+![](/img/图片2.png)
 ```
 （5）创建一个服务端类和一个客户端类:
 `vim SocketService.java`
@@ -133,15 +137,15 @@ public class SocketClient{
 `git commit -m "新建一个客户端"`
 `git push -u origin "main"`
 ```
-![](/图片3.png)
+![](/img/图片3.png)
 ```
 （6）将服务器端和客户端代码分别拷贝到对应容器的镜像里：
 `docker cp SocketService.java fwd:/`
 `docker cp SocketClient.java khd:/`
 （7）进入服务器的容器和客户端的容器，然后启动服务器端和客户端程序，开始通信：
 ```
-![](/图片4.png)
-![](/图片5.png)
+![](/img/图片4.png)
+![](/img/图片5.png)
 ```
 ##安装hugo并创建静态网站
 **1.安装并配置Hugo**
@@ -164,11 +168,11 @@ public class SocketClient{
 `hugo new post/Linux_dazuoye.md`
 （2）编写文章：
 ```
-![](/图片6.png)
+![](/img/图片6.png)
 ```
 （3）在本地使用hugo命令在根目录生成public文件夹：
 ```
-![](/图片7.png)
+![](/img/图片7.png)
 ```
 **3.运用docker技术部署静态网站到web服务器**
 （1）创建一个容器web：
