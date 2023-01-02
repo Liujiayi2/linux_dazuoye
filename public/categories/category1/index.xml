@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>category1 on 一家之煮的博客</title>
-    <link>https://example.com/categories/category1/</link>
+    <link>https://github.com/Liujiayi2/categories/category1/</link>
     <description>Recent content in category1 on 一家之煮的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jan 2023 13:11:07 +0800</lastBuildDate><atom:link href="https://example.com/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 13:11:07 +0800</lastBuildDate><atom:link href="https://github.com/Liujiayi2/categories/category1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://example.com/posts/linux/</link>
+      <link>https://github.com/Liujiayi2/posts/linux/</link>
       <pubDate>Mon, 02 Jan 2023 13:11:07 +0800</pubDate>
       
-      <guid>https://example.com/posts/linux/</guid>
+      <guid>https://github.com/Liujiayi2/posts/linux/</guid>
       <description>安装配置Git  1.安装Git
  sudo yum install git
   2.配置Git
