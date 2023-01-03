@@ -2,19 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tag2 on 一家之煮的博客</title>
-    <link>https://example.com/tags/tag2/</link>
+    <link>http://192.168.92.132/tags/tag2/</link>
     <description>Recent content in tag2 on 一家之煮的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jan 2023 09:12:29 +0800</lastBuildDate><atom:link href="https://example.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 17:12:48 +0800</lastBuildDate><atom:link href="http://192.168.92.132/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://example.com/posts/linux/</link>
-      <pubDate>Mon, 02 Jan 2023 09:12:29 +0800</pubDate>
+      <link>http://192.168.92.132/posts/linux/</link>
+      <pubDate>Tue, 03 Jan 2023 17:12:48 +0800</pubDate>
       
-      <guid>https://example.com/posts/linux/</guid>
-      <description>安装配置Git 1.安装Git sudo yum install git 2.配置Git （1）配置用户名和邮箱： git config --global user.name &amp;quot;Liujiayi2&amp;quot; git config --global user.email &amp;quot;example@example.com&amp;quot; git config --list （2）获取ssh密钥： ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot; cat /root/.ssh/id_rsa.pub （3）成功建立和Github的联系：
-![](/图片1.png) ssh git@github.com （4）关联到远程仓库： git remote add origin git@github.com:your_username/xxx.git git remote set-url origin git@github.com:your_username/xxx.git git remote -v git push -u origin &amp;quot;main&amp;quot; ##使用docker和socket技术使客户端和服务端之间的信息传递 （1）安装docker： sudo yum install docker （2）在远程仓库下载tomcat镜像： docker pull tomcat （3）运行镜像创建两个容器，分别名为fwd（服务端）和khd（客户端），再设置端口映射，fwq的端口为2002，khd的端口为2004： docker run -itd --name fwd -p 2002:2002 tomcat docker run -itd --name khd -p 2004:2002 tomcat （4）查看fwq的IP地址： docker incpect --format=&#39;{{.</description>
+      <guid>http://192.168.92.132/posts/linux/</guid>
+      <description>安装配置Git  1.安装Git
+ sudo yum install git
+  2.配置Git
+（1）配置用户名和邮箱：
+ git config --global user.name &amp;quot;Liujiayi2&amp;quot;
+  git config --global user.email &amp;quot;2844545327@qq.com&amp;quot;
+  git config --list
+ （2）获取ssh密钥：
+ ssh-keygen -t rsa -C &amp;quot;2844545327@qq.com&amp;quot;
+  cat /root/.ssh/id_rsa.pub
+ （3）成功建立和Github的联系：
+ ssh git@github.com
+ （4）关联到远程仓库：
+ git remote add origin git@github.com:Liujiayi2/linux_dazuoye.git
+  git push -u origin &amp;quot;main&amp;quot;
+  Ps:如果git push -u origin &amp;quot;main&amp;quot;运行不成功，可以先运行代码git remote set-url origin git@github.</description>
     </item>
     
   </channel>

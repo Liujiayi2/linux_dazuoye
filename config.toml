@@ -1,4 +1,4 @@
-baseurl = "https://github.com"
+baseurl = "http://192.168.92.132/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "一家之煮的博客"
@@ -28,7 +28,7 @@ theme = "dream"
   author = "Jiayi Liu"
   # description = ""
   avatar = "/img/avatar.jpeg"
-  headerTitle = "Hugo Theme Dream"
+  headerTitle = "一家之煮"
   motto = "一以贯之的努力，不得懈怠的人生。"
   # maxTags = 5
   # categoriesLimitInHeader = 6 # deprecated
@@ -48,7 +48,7 @@ theme = "dream"
   email = "2844545327@qq.com"
   github = "Liujiayi2"
 
-  siteStartYear = 2016
+  siteStartYear = 2022
 
   # favicon = "/favicon.ico"
 
