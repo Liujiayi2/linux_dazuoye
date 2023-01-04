@@ -11,7 +11,7 @@ import java.net.URL;
 public class SocketClient{
         public static void main(String[] args) throws IOException{
                 try{
-                        Socket socket = new Socket("172.17.0.2",2002);
+                        Socket socket = new Socket("172.17.0.3",2002);
                         System.out.println("Client enable Success");
                         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                         PrintWriter writer = new PrintWriter(socket.getOutputStream());
